@@ -1,0 +1,11 @@
+restart docker: sudo service docker start
+kubectl get pods
+kubectl get nodes
+kubectl run [nome do pod] --image [imagem]
+kubectl delete pod [nome do pod a ser deletado] -> deletando um pod
+kubectl describe pod [nome do pod] -> informações sobre o pod
+kubectl edit pod nginx-pod -> editar informações do pod
+kubectl apply -f [.yaml] -> criação de um pod a partir de um arquivo .yaml
+kubectl get pods --watch -> acompanha em tempo real o status dos pods
+kubectl exec -it [pod onde se encontra o container] -- bash -> acessando um container através do pod
+CTRL + D -> sai do container

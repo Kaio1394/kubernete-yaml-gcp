@@ -1,8 +1,11 @@
+# Versão da api do kubernetes
 apiVersion: v1
+# tipo que será criado. Nesse caso será a criação de um Pod
 kind: Pod
 metadata: 
   name: primeiro-pod-declaration
 spec:
+  # informações dos containers
   containers:
     - name: nginx-container
       image: nginx:stable
